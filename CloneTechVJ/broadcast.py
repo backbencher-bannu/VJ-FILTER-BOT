@@ -63,7 +63,7 @@ async def broadcast_messages(bot_id, user_id, message):
         await message.copy(chat_id=user_id)
         return True, "Success"
     except FloodWait as e:
-        await asyncio.sleep(e.x)
+        await asyncio.sleep(e.value)
         return await broadcast_messages(bot_id, user_id, message)
     except InputUserDeactivated:
         await clonedb.delete_user(bot_id, user_id)
