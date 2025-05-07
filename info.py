@@ -112,7 +112,7 @@ USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', True))
 
 
 # Token Verification Info :
-VERIFY = bool(environ.get('VERIFY', True))
+VERIFY = bool(environ.get('VERIFY', False))
 VERIFY_SHORTLINK_URL = environ.get('VERIFY_SHORTLINK_URL', 'https://avhlink.site/')
 VERIFY_SHORTLINK_API = environ.get('VERIFY_SHORTLINK_API', '858bed32cb3a9e68de45894f9fd76a86e655b9b0')
 VERIFY_TUTORIAL = environ.get('VERIFY_TUTORIAL', '')
